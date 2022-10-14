@@ -5,6 +5,14 @@ This module deploys AWS infrastructure to store Terraform remote state in S3 buc
 
 ![Remote-state](img/Remote-state.png)
 
+## Prerequisite
+We need to adjust the two local variables accordingly:
+
+| Name | Default value                  |
+|------|--------------------------------|
+|aws_region | ap-southeast-2                 |
+|prefix| tomniu01-hands-on-remote-state |
+
 ## Deployment
 
 ```sh
