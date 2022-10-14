@@ -49,4 +49,8 @@ terraform destroy -auto-approve
 | <a name="output_dynamodb-lock-table-ssm-parameter"></a> [dynamodb-lock-table-ssm-parameter](#output\_dynamodb-lock-table-ssm-parameter) | SSM parameter containing DynamoDB table for Terraform execution locks |
 | <a name="output_s3-state-bucket"></a> [s3-state-bucket](#output\_s3-state-bucket) | S3 bucket for storing Terraform state |
 | <a name="output_s3-state-bucket-ssm-parameter"></a> [s3-state-bucket-ssm-parameter](#output\_s3-state-bucket-ssm-parameter) | SSM parameter containing S3 bucket for storing Terraform state |
+
+## Related knowledge
+
+
 <!-- END_TF_DOCS -->
