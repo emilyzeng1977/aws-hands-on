@@ -1,7 +1,7 @@
-variable "aws_region" {
-  type = string
+variable "prefix" {
+  description = "Common prefix for AWS resources names"
 }
 
-variable "prefix" {
-  type = string
+variable "aws_region" {
+  description = "AWS Region to deploy VPC"
 }

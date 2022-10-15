@@ -24,7 +24,7 @@ terraform apply -var-file=../terraform.tfvars -auto-approve
 ## Tier down
 
 ```sh
-terraform destroy -auto-approve
+terraform destroy -var-file=../terraform.tfvars -auto-approve
 ```
 ## Providers
 
@@ -51,6 +51,4 @@ terraform destroy -auto-approve
 | <a name="output_s3-state-bucket-ssm-parameter"></a> [s3-state-bucket-ssm-parameter](#output\_s3-state-bucket-ssm-parameter) | SSM parameter containing S3 bucket for storing Terraform state |
 
 ## Related knowledge
-
-
 <!-- END_TF_DOCS -->
