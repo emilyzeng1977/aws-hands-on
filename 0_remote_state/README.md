@@ -6,19 +6,19 @@ This module deploys AWS infrastructure to store Terraform remote state in S3 buc
 ![Remote-state](img/Remote-state.png)
 
 ## Prerequisite
-We need to adjust the two local variables accordingly:
+We need to adjust the two local variables in terraform.tfvars accordingly:
 
 | Name | Default value                  |
 |------|--------------------------------|
 |aws_region | ap-southeast-2                 |
-|prefix| tomniu01-hands-on-remote-state |
+|prefix| tomniu01-aws-hands-on |
 
 ## Deployment
 
 ```sh
 terraform init
-terraform plan
-terraform apply -auto-approve
+terraform plan -var-file=../terraform.tfvars
+terraform apply -var-file=../terraform.tfvars -auto-approve
 ```
 
 ## Tier down

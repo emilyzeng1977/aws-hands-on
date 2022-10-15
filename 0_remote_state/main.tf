@@ -1,7 +1,7 @@
 locals {
-  aws_region = "ap-southeast-2"
-  prefix     = "tomniu01-hands-on-remote-state"
-  ssm_prefix = "/org/hands-on-cloud/terraform"
+  aws_region = var.aws_region
+  prefix     = var.prefix
+  ssm_prefix = "/org/aws-hands-on/terraform"
   common_tags = {
     Project   = "aws-hands-on"
     ManagedBy = "Terraform"
